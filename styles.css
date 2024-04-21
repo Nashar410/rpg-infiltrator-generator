@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left-column, .right-column {
+    flex: 1; /* Chaque colonne prend 50% de la largeur disponible */
+    padding: 10px;
+}
+
+.form-container, .input-output-container {
+    margin-bottom: 20px;
+}
+
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #4A90E2;
+    text-align: center;
+}
+
+.form-container, .input-output-container {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+.pnjs-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pnj {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.key-pnj {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.pnj-avatar {
+    flex: 0 0 auto;
+}
+
+.pnj-avatar img {
+    width: 100px;  
+    height: 100px; 
+    border-right: 1px solid #ddd; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.pnj-info {
+    flex: 1 1 auto;
+    padding: 10px;
+}
+
+.pnj-info h3 {
+    margin-top: 0;
+}
+
+.pnj-status, .pnj-inputs {
+    margin-bottom: 5px;
+}
+
+.pnj-inputs input {
+    width: 50px;
+}
+
+
+
+.avatar {
+    border-width: 5px;
+    border-style: solid;
+}
+
+.trust-high {
+    border-color: green;
+}
+
+.trust-max {
+    border-color: gold;
+}
+
+.suspicion-high {
+    border-color: red;
+}
+
+.suspicion-max {
+    border-color: purple;
+}
