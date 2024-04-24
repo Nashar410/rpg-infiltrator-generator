@@ -71,19 +71,21 @@ button:hover {
 .pnjs-display {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 20px;
 }
 
 .pnj {
-    display: flex;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
+    background:#00000030;
+    padding: 16px;
 }
 
 .key-pnj {
+    background:#00001030;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -91,10 +93,15 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
+    padding: 16px;
 }
 
 .pnj-avatar {
     flex: 0 0 auto;
+}
+
+.pnj-container {
+    background: #9b9b9b96;
 }
 
 .pnj-avatar img {

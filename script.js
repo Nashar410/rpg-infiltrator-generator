@@ -107,9 +107,9 @@ function updatePNJ(index, key, value) {
 }
 
 function generateHTML() {
-    const css = `.me-pnj-container { display: flex; flex-wrap: wrap; align-items: flex-start; }` +
-                `.me-key-pnj { width: 100%}` +
-                `.me-pnj { width: calc(33.33% - 22px); }` + // Adjusting width for three PNJs per line
+    const css = `.me-pnj-container { display: flex; flex-wrap: wrap;justify-content: space-evenly; align-items: flex-start; background: #9b9b9b96;}` +
+                `.me-key-pnj { width: 100%; background:#00001030; padding: 16px; }` +
+                `.me-pnj { background:#00000030; padding: 16px; }` + // Adjusting width for three PNJs per line
                 `.me-key-pnj, .me-pnj { margin: 10px; padding: 10px; border-radius: 5px; border: 2px solid #ccc; display: flex; align-items: center; }` +
                 `.me-pnj-avatar img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }` +
                 `.me-pnj-info { margin-left: 10px; }` +
