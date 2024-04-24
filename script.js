@@ -213,6 +213,27 @@ function toggleForms() {
     }
 }
 
+function randomizeCurrentInputs() {
+    // récupérer les champs inputs de confiance et de suspicion
+    const inputCurrentTrust = document.querySelector('#currentTrust');
+    const inputCurrentSuspicion = document.querySelector('#currentSuspicion');
+
+
+    // récupérer la valeur du champ "Limit"
+    const limitTrust = document.getElementById('limitTrust').value;
+    const limitSuspicion = document.getElementById('limitSuspicion').value;
+
+    // créer deux valeurs aléatoires pour la confiance et la suspicion entre 0 et la limite
+    const randomTrust = Math.floor(Math.random() * limitTrust);
+    const randomSuspicion = Math.floor(Math.random() * limitSuspicion);
+
+    // mettre ces valeurs dans les champs inputs
+    inputCurrentTrust.value = randomTrust;
+    inputCurrentSuspicion.value = randomSuspicion;
+    
+}
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     displayPNJs();

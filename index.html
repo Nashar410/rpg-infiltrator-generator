@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Générateur de Suivi de PNJ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Générateur de Suivi de PNJ pour Jeu d'Infiltration</h1>
@@ -21,32 +23,45 @@
                     <input type="text" id="importHtml" placeholder="Coller le code généré ici">
                     <button onclick="importHTML()">Charger</button>
                 </div>
-        
-    </div>
-    <div class="right-column">
-        <button id="toggleFormsButton" onclick="toggleForms()">Afficher Création des PNJ</button>
-        <div id="formsContainer" style="display: none;">
-            <div id="pnjKeyForm" class="form-container">
-                <input type="text" id="keyName" placeholder="Nom du PNJ Clé">
-                <input type="url" id="keyAvatar" placeholder="URL de l'avatar">
-                <input type="number" id="maxIncredulity" placeholder="Incrédulité Max">
-                <input type="number" id="currentIncredulity" placeholder="Incrédulité Actuelle">
-                <button onclick="addKeyPNJ()">Ajouter PNJ Clé</button>
+
             </div>
-            <div id="pnjForm" class="form-container">
-                <input type="text" id="name" placeholder="Nom du PNJ">
-                <input type="url" id="avatar" placeholder="URL de l'avatar">
-                <input type="number" id="maxTrust" placeholder="Confiance Max">
-                <input type="number" id="currentTrust" placeholder="Confiance Actuelle">
-                <input type="number" id="maxSuspicion" placeholder="Suspicion Max">
-                <input type="number" id="currentSuspicion" placeholder="Suspicion Actuelle">
-                <button onclick="addPNJ()">Ajouter PNJ</button>
-            </div>        
+            <div class="right-column">
+                <button id="toggleFormsButton" onclick="toggleForms()">Afficher Création des PNJ</button>
+                <div id="formsContainer" style="display: none;">
+                    <div id="pnjKeyForm" class="form-container">
+                        <input type="text" id="keyName" placeholder="Nom du PNJ Clé" title="Nom du PNJ Clé">
+                        <input type="url" id="keyAvatar" placeholder="URL de l'avatar" title="URL de l'avatar">
+                        <input type="number" id="currentIncredulity" placeholder="Incrédulité Actuelle"
+                            title="Incrédulité Actuelle">
+                        <input type="number" id="maxIncredulity" placeholder="Incrédulité Max" title="Incrédulité Max">
+                        <button onclick="addKeyPNJ()">Ajouter PNJ Clé</button>
+                    </div>
+                    <div id="pnjForm" class="form-container">
+                        <input type="text" id="name" placeholder="Nom du PNJ" title="Nom du PNJ">
+                        <input type="url" id="avatar" placeholder="URL de l'avatar" title="URL de l'avatar">
+                        <input type="number" id="currentTrust" placeholder="Confiance Actuelle"
+                            title="Confiance Actuelle">
+                        <input type="number" id="maxTrust" placeholder="Confiance Max" title="Confiance Max">
+                        <input type="number" id="currentSuspicion" placeholder="Suspicion Actuelle"
+                            title="Suspicion Actuelle">
+                        <input type="number" id="maxSuspicion" placeholder="Suspicion Max" title="Suspicion Max">
+                        <hr style="width: 100%">
+                        <div class="limit-container">
+                            <input type="number" id="limitTrust" placeholder="Confiance Limite"
+                                title="Confiance Limite">
+                            <input type="number" id="limitSuspicion" placeholder="Suspicion Limite"
+                                title="Suspicion Limite">
+                            <button onclick="randomizeCurrentInputs()">Aléatoire pour les valeurs actuelles</button>
+                        </div>
+                        <button onclick="addPNJ()">Ajouter PNJ</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="pnjsContainer" class="pnjs-display"></div>
-    </div>
-</div>
+
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
